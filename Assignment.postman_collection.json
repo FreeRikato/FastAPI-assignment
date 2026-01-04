@@ -10,7 +10,7 @@
 			"name": "Assignment 1",
 			"item": [
 				{
-					"name": "register",
+					"name": "Register User",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -37,7 +37,7 @@
 					"response": []
 				},
 				{
-					"name": "login",
+					"name": "Login User",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -64,7 +64,7 @@
 					"response": []
 				},
 				{
-					"name": "get profile details",
+					"name": "Get Profile Details",
 					"request": {
 						"method": "GET",
 						"header": []
@@ -72,7 +72,7 @@
 					"response": []
 				},
 				{
-					"name": "edit profile details",
+					"name": "Edit Profile Details",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -104,6 +104,54 @@
 							"path": [
 								"users",
 								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assignment 2",
+			"item": [
+				{
+					"name": "Get Current Weather",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Weather Forecast",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cache Status",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cache Status",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/weather/cache",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"weather",
+								"cache"
 							]
 						}
 					},
